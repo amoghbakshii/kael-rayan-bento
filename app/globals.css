@@ -1,26 +1,133 @@
+/* app/globals.css */
+
+/* 1. Import all of Tailwind's styles */
 @import "tailwindcss";
+@import "tw-animate-css";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
+@custom-variant dark (&:is(.dark *));
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
+/* 2. Define your custom brand colors as CSS variables */
+@layer base {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --deep-black: 0 0% 2%; /* 050505 */
+    --smoky-gray: 0 0% 8%; /* 141414 */
+    --cyan-accent: 187 100% 50%; /* 00E5FF */
+
+    /* Shadcn/ui base variables (we'll make them match your theme) */
+    --background: var(--deep-black);
+    --foreground: 0 0% 98%; /* Default text white */
+
+    --card: var(--deep-black);
+    --card-foreground: 0 0% 98%;
+
+    --popover: var(--deep-black);
+    --popover-foreground: 0 0% 98%;
+
+    --primary: 0 0% 98%;
+    --primary-foreground: 0 0% 9%;
+
+    --secondary: 0 0% 15%;
+    --secondary-foreground: 0 0% 98%;
+
+    --muted: 0 0% 15%;
+    --muted-foreground: 0 0% 63%;
+
+    --accent: var(--cyan-accent);
+    --accent-foreground: 0 0% 9%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 98%;
+
+    --border: 0 0% 15%;
+    --input: 0 0% 15%;
+    --ring: var(--cyan-accent);
+
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    /* Since you want a dark-only theme, we just copy the root */
+    @apply: root;
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+/* * --- THIS IS THE CORRECTED SECTION --- 
+ * 3. Tell Tailwind to create utility classes from ALL your variables
+ */
+@theme {
+  /* Your custom colors */
+  --color-deep-black: hsl(var(--deep-black));
+  --color-smoky-gray: hsl(var(--smoky-gray));
+  --color-cyan-accent: hsl(var(--cyan-accent));
+
+  /* Shadcn/ui colors */
+  --color-background: hsl(var(--background));
+  --color-foreground: hsl(var(--foreground));
+  --color-card: hsl(var(--card));
+  --color-card-foreground: hsl(var(--card-foreground));
+  --color-popover: hsl(var(--popover));
+  --color-popover-foreground: hsl(var(--popover-foreground));
+  --color-primary: hsl(var(--primary));
+  --color-primary-foreground: hsl(var(--primary-foreground));
+  --color-secondary: hsl(var(--secondary));
+  --color-secondary-foreground: hsl(var(--secondary-foreground));
+  --color-muted: hsl(var(--muted));
+  --color-muted-foreground: hsl(var(--muted-foreground));
+  --color-accent: hsl(var(--accent));
+  --color-accent-foreground: hsl(var(--accent-foreground));
+  --color-destructive: hsl(var(--destructive));
+  --color-destructive-foreground: hsl(var(--destructive-foreground));
+  --color-border: hsl(var(--border));
+  --color-input: hsl(var(--input));
+  --color-ring: hsl(var(--ring));
+}
+
+/* 4. Set the default body styles */
+@layer base {
+  body {
+    @apply bg-deep-black text-white;
+  }
+}
+
+@theme inline {
+  --animate-aurora: aurora 60s linear infinite;
+  @keyframes aurora {
+    from {
+      background-position: 50% 50%, 50% 50%;
+    }
+    to {
+      background-position: 350% 50%, 350% 50%;
+    }
+  }
+  @keyframes aurora {
+    0% {
+      background-position: 0% 50%;
+      transform: rotate(-5deg) scale(0.9);
+    }
+    25% {
+      background-position: 50% 100%;
+      transform: rotate(5deg) scale(1.1);
+    }
+    50% {
+      background-position: 100% 50%;
+      transform: rotate(-3deg) scale(0.95);
+    }
+    75% {
+      background-position: 50% 0%;
+      transform: rotate(3deg) scale(1.05);
+    }
+    100% {
+      background-position: 0% 50%;
+      transform: rotate(-5deg) scale(0.9);
+    }
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
 }
