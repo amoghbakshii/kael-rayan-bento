@@ -8,7 +8,8 @@
 
 <br><br>
 
-# 🎬 Kael Rayan — Visual Storyteller Portfolio
+# Cluvion Assignment-Amogh Bakshi
+# Kael Rayan — Visual Storyteller Portfolio
 
 ### A cinematic one-page portfolio website for a video editor & visual storyteller  
 Built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **Framer Motion** to deliver a fluid, modern, and visually immersive experience.
