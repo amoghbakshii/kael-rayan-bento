@@ -1,37 +1,61 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+<div align="center">
 
-## Getting Started
+<img src="https://img.shields.io/badge/Next.js-black?style=for-the-badge&logo=nextdotjs&logoColor=white"/> 
+<img src="https://img.shields.io/badge/TypeScript-007ACC?style=for-the-badge&logo=typescript&logoColor=white"/> 
+<img src="https://img.shields.io/badge/Tailwind_CSS-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white"/> 
+<img src="https://img.shields.io/badge/Framer_Motion-EF4444?style=for-the-badge&logo=framer&logoColor=white"/> 
+<img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white"/> 
 
-First, run the development server:
+<br><br>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+# 🎬 Kael Rayan — Visual Storyteller Portfolio
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### A cinematic one-page portfolio website for a video editor & visual storyteller  
+Built with **Next.js**, **TypeScript**, **Tailwind CSS**, and **Framer Motion** to deliver a fluid, modern, and visually immersive experience.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+<p align="center">
+  <a href="https://kael-rayan-bento.vercel.app/" target="_blank">
+    <img src="https://img.shields.io/badge/🌐_Live_Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Live Demo"/>
+  </a>
+  <a href="https://github.com/amoghbakshii/kael-rayan-bento" target="_blank">
+    <img src="https://img.shields.io/badge/📁_GitHub_Repo-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub Repo"/>
+  </a>
+</p>
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+</div>
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## 🧠 Overview
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+**Kael Rayan Portfolio** is a high-end, motion-focused single-page portfolio for a **visual storyteller and video editor**.  
+It combines cinematic design with smooth animation and a modern stack to captivate viewers and potential clients alike.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Tech Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+<div align="center">
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
-# kael-rayan-bento
+| Category | Tools |
+|-----------|-------|
+| **Core Frameworks** | <img src="https://skillicons.dev/icons?i=nextjs,react,typescript" /> |
+| **Styling & Animation** | <img src="https://skillicons.dev/icons?i=tailwind" /> + Framer Motion |
+| **UI Libraries & Icons** | Shadcn/UI · Lucide React · Aceternity UI · MagicUI · Forge UI |
+| **Deployment** | <img src="https://skillicons.dev/icons?i=vercel,git,github" /> |
+| **Dev Tools** | <img src="https://skillicons.dev/icons?i=vscode,npm" /> |
+
+</div>
+
+---
+
+##  Features
+
+**Immersive Hero Section** – Dynamic “blur text” reveal, showreel modal, and reactive particle/orb effects.  
+**Sticky Scroll Work Section** – Showcases creative services with cinematic scroll transitions.  
+**Interactive Projects Showcase** – Auto-playing carousel with modal video previews.  
+**Clients & Testimonials** – Orbiting logo animation, live testimonial rotator, and social proof metrics.  
+**Contact Section** – Interactive form with animated canvas background and scheduling links.  
+**Framer Motion Animations** – Used across every interaction, hover, and page transition.  
+**Fully Responsive** – Works seamlessly on desktop, tablet, and mobile screens.
+
