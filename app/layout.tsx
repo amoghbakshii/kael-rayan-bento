@@ -26,7 +26,7 @@ export default function RootLayout({
     <html lang="en" className="dark">
       <body className={cn(manrope.className, "antialiased")}>
         {/* This is the correct component wrapper from your file */}
-        {/* <SmoothCursor />
+        <SmoothCursor />
         <DotPattern
           width={20}
           height={20}
@@ -37,7 +37,7 @@ export default function RootLayout({
             "[mask-image:radial-gradient(at_center,white,transparent_80%)]",
             "fixed inset-0"
           )}
-        /> */}
+        />
         <div className="relative z-10">{children}</div>
       </body>
     </html>
